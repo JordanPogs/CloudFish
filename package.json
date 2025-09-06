@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "start": "react-scripts start",
+    "server": "json-server --watch db.json"
   },
   "repository": {
     "type": "git",
@@ -22,6 +25,11 @@
   "homepage": "https://github.com/JordanPogs/CloudFish#readme",
   "dependencies": {
     "@vitejs/plugin-react": "^5.0.2",
+    "eslint": "^9.35.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "json-server": "^1.0.0-beta.3",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "vite": "^7.1.4"

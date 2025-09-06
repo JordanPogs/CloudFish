@@ -1,0 +1,111 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top as in the screenshot */
+  min-height: 100vh;
+  background-color: #f0f2f5; /* Light background as seen in the screenshot */
+  padding-top: 50px; /* Space from the top */
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 350px; /* Adjust max-width as needed */
+}
+
+h1 {
+  color: #1877f2; /* Blue color for the "Login" title */
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between inputs and the login button */
+}
+
+input {
+  width: calc(100% - 20px); /* Adjust for padding */
+  padding: 12px 10px;
+  margin-bottom: 5px; /* Adjust margin if needed */
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #e4e6eb; /* Darker gray background for inputs */
+  color: #333;
+}
+
+input::placeholder {
+  color: #606770; /* Placeholder color */
+}
+
+.login-button {
+  background-color: #1877f2; /* Blue color for Log In button */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 5px; /* Space between last input and button */
+}
+
+.login-button:hover:not(:disabled) {
+  background-color: #166fe5;
+}
+
+.login-button:disabled {
+  background-color: #a2c6f1; /* Lighter blue when disabled */
+  cursor: not-allowed;
+}
+
+.signin-button {
+  background-color: #fff; /* White background for Sign In button */
+  color: #1877f2; /* Blue text for Sign In button */
+  padding: 12px 20px;
+  border: 1px solid #1877f2; /* Blue border */
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%;
+  margin-top: 15px; /* Space between Log In and Sign In buttons */
+}
+
+.signin-button:hover {
+  background-color: #e7f3ff; /* Light blue background on hover */
+}
+
+.loading-spinner {
+  border: 4px solid #f3f3f3; /* Light grey */
+  border-top: 4px solid #1877f2; /* Blue */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  margin: 15px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-message {
+  color: red;
+  margin-top: 15px;
+  font-size: 14px;
+}
